@@ -5,7 +5,7 @@ const router = express.Router();
 
 const mysqlConnection = require('../database');
 
-//Retrieve all employess from mysql db 
+//Retrieve all employees from mysql db 
 router.get('/', (req,res)=>{
 
     mysqlConnection.query('SELECT * FROM employees;',(err,rows,fields)=>{
